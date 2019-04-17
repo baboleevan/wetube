@@ -1,0 +1,7 @@
+.gitigonore git에 올리지 않을 것들을 정해준다.
+ - 구글 검색에 .gitignore nodeJS 라고 치면 나오는거에 package-lock.json을 넣어준다.
+
+GIT HUB 이용법
+
+git remote add origin [Git repository 주소]
+ ex) git remote add origin https://github.com/rlarnfktkd1/wetube
