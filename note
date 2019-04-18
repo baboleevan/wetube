@@ -1,7 +1,58 @@
-.gitigonore git에 올리지 않을 것들을 정해준다.
- - 구글 검색에 .gitignore nodeJS 라고 치면 나오는거에 package-lock.json을 넣어준다.
+Node에서 Babel 지원 (babel/node)
+1. npm install @babel/node
 
-GIT HUB 이용법
+2. npm install @babel/preset-env
 
-git remote add origin [Git repository 주소]
- ex) git remote add origin https://github.com/rlarnfktkd1/wetube
+3. .babelrc 파일 생성후 입력
+.babelrc
+{
+    "presets": ["@babel/preset-env"]
+}
+
+4. npm install @babel/core
+
+
+nodemon 설치 후 package.json
+
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js --delay 2"
+  },
+
+--delay2 하는 이유는 babel이 변환하는것을 기다리기 위해서
+
+MiddleWare 란 유저의 요청과 서버의 응답 사이에 있는것이다.
+ - 권한을 브라우저에게 주지 않았다. 따라서 next를 쓴다.
+ - express의 모든 route와 그런 것들은 connection을 다루는 건 req, res, next를 갖고있다.
+ - Middleware에는 항상 Next를 넣어준다. 마지막 함수가 아닌 이상.
+
+ JAVASCRIPT는 위에서부터 한줄씩 처리되기 때문에
+ Middleware는 
+
+ morgan - 로깅을 보여준다.
+  - app.use(logger("Mode"))
+   - tiny : 간략하게
+   - dev : 간략한데 색깔을 넣는다.
+   - combined : 브라우저 까지 보여준다.
+
+   body-parser - Front단에서 form으로 전해져 오는걸 object로 받아주는 모듈
+   cookie-parser - cookie에 유저 정보를 저장(세션을 위해서)
+
+   default로 export 하지 않은건 불러올때 {}로 불러온다.
+
+   export default app;
+   불러올 때 import app from "./app"
+
+   export const userRouter = express.router();
+   불러올 때 import {userRouter} from './routes/index.js'
+
+   app.js에서 사용할때는
+   라우터도 하나의 미들웨어로 작동되기 때문에 use를 사용해서 한다.
+   app.use('user', userRouter);
+  export Default는 파일로 export 한다는 의미다.
+  
+
+
+   MVC(Model, View, Control) - 서로 분리해야한다.
+    - M : data
+    - V : 데이터가 어떻게 보여지는지
+    - C : data를 찾는 함수( Function )
