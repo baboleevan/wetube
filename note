@@ -34,8 +34,11 @@ MiddleWare 란 유저의 요청과 서버의 응답 사이에 있는것이다.
    - dev : 간략한데 색깔을 넣는다.
    - combined : 브라우저 까지 보여준다.
 
-   body-parser - Front단에서 form으로 전해져 오는걸 object로 받아주는 모듈
-   cookie-parser - cookie에 유저 정보를 저장(세션을 위해서)
+   body-parser - 사용자가 웹사이트로 전달하는 정보들을 검사하는 미들웨어.
+    - request 정보에서 form이나 json 형태로 된 body를 검사.
+    
+   cookie-parser - cookie를 전달 받아서 사용할 수 있도록 만들어주는 미들웨어
+    - 사용자 인증 같은 곳에서 쿠키를 검사할 때 사용해야한다.
 
    default로 export 하지 않은건 불러올때 {}로 불러온다.
 

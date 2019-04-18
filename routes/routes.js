@@ -1,3 +1,5 @@
+//한 파일이 바뀌면 모두 적용될 수 있도록 가능하게 함.
+
 // Global
 const HOME = "/";
 const JOIN = "/join";

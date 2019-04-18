@@ -7,8 +7,13 @@ GIT HUB 이용법
 1. git remote add origin [Git repository 주소]
  ex) git remote add origin https://github.com/rlarnfktkd1/wetube
 
+
+ - 수정 파일 올리는법 - 
+ 
  2. git add .
 
  3. git commit -m "Install Commit"
+
+ 4. git push origin master
 
  npm install @babel/node
