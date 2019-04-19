@@ -17,3 +17,10 @@ GIT HUB 이용법
  4. git push origin master
 
  npm install @babel/node
+
+ - git branch 생성하기 - 
+ 1. git branch [브랜치명] // git 브랜치 생성
+  - git branch wetube-Nodatabase
+ 2. git branch // git 브랜치 확인하기
+ 3. git checkout [브랜치명] // git 브랜치 전환하기
+  - git checkout wetube-Nodatabase

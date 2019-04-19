@@ -1,0 +1,2 @@
+MONGO_URL="몽고DB URL 주소"
+PORT=포트 넘버
