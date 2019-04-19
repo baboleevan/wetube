@@ -59,3 +59,5 @@ MiddleWare 란 유저의 요청과 서버의 응답 사이에 있는것이다.
     - M : data
     - V : 데이터가 어떻게 보여지는지
     - C : data를 찾는 함수( Function )
+
+    
