@@ -24,3 +24,13 @@ mixin videoBlock(video = {})
   자신의 서버에 파일을 업로드 시키는것은 좋지 않은 방식이다.
    서버를 분리해놓는다. 보통 AWS Cloud에 저장을 하고 우리는 AWS CLoud URL을 통해서 받아올것이다.
    
+
+   Linter 에러를 잡아주는 도구
+   ESLINT
+   npm install eslint -g
+   1. eslint --init 
+   1. 나의 자바스크립트 파일 조사하기
+   2. 질문에 답하기
+   3. 가장 많이 쓰는 스타일
+
+   
