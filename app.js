@@ -21,6 +21,7 @@ app.set("view engine", "pug");
 app.use(helmet());
 // directory에서 file을 보내주는 middleware
 app.use("/uploads", express.static("uploads"));
+app.use("/static", express.static("static"));
 app.use(cookieParser());
 app.use(logger("dev"));
 app.use(localsMiddleware);
