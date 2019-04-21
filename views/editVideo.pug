@@ -3,7 +3,7 @@ extends layouts/main
 block content
     .form-control
         form(method="post", action=routes.editVideo(video.id))
-        input(type="text",name="title", placeholder="Title", value=video.title)
-        textarea(name="description", placeholder="Description")=video.description
-        input(type="submit", value="Update Video")
-     a.form-container__link.form-container__link--delete(href=`/videos${routes.deleteVideo}`) Delete Video
+            input(type="text",name="title", placeholder="Title", value=video.title)
+            textarea(name="description", placeholder="Description")=video.description
+            input(type="submit", value="Update Video")
+        a.form-container__link.form-container__link--delete(href=`/videos${routes.deleteVideo}`) Delete Video
