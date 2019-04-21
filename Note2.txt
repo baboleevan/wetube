@@ -18,3 +18,9 @@ mixin videoBlock(video = {})
  4. 미들웨어를 생성해주고 안에 multer의 destination을 지정해준다.
   - const multerVideo = multer({ dest: "videos/" });
   - export const uploadVideo = multerVideo.single("videoFile");
+
+
+
+  자신의 서버에 파일을 업로드 시키는것은 좋지 않은 방식이다.
+   서버를 분리해놓는다. 보통 AWS Cloud에 저장을 하고 우리는 AWS CLoud URL을 통해서 받아올것이다.
+   

@@ -15,5 +15,3 @@ GIT HUB 이용법
  3. git commit -m "Install Commit"
 
  4. git push origin master
-
- npm install @babel/node
